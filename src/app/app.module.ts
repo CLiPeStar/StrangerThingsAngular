@@ -6,11 +6,9 @@ import {AppComponent} from './app.component';
 import {HistoriaComponent} from './historia/historia.component';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
+import {HistoriaRoutingModule} from './historia/historia-routing.module';
 
-const routes: Routes = [
-  // {path: '', pathMatch: 'full', redirectTo: 'main'},
-  {path: '', component: MainComponent},
-  {path: 'history', component: HistoriaComponent}];
+
 
 @NgModule({
   declarations: [
@@ -21,7 +19,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    HistoriaRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
