@@ -26,7 +26,7 @@ header .toggle img {
   width: 100%;
   min-height: 100vh;
   padding: 0 100px;
-  background: url(../IMG/bg1.jpg);
+  background: url("../../../../assets/img/bg1.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -100,7 +100,7 @@ header .toggle img {
   left: 50%;
   width: 250px;
   height: 150px;
-  background: url(../IMG/1TemporadaSlide.jpg);
+  background: url("../../../../assets/img/1TemporadaSlide.jpg");
   background-size: cover;
   animation: animate 25s linear infinite;
 }

@@ -1,6 +1,6 @@
 <header>
-  <nav class="logo"><img src="IMG/logoString.png"></nav>
-  <div class="toggle"><img src="IMG/toggle.png"></div>
+  <nav  routerLink="/" class="logo"><img routerLink="/" src="./assets/img/logoString.png"></nav>
+  <div class="toggle"><img src="./assets/img/toggle.png"></div>
 </header>
 <div class="banner">
   <div class="content">
@@ -21,17 +21,16 @@
       <span>Todas las
           pistas conducen al laboratorio de energía que el Departamento de Estado tiene en la ciudad.</span>
     </p>
-    <nav class="play"><img src="IMG/play.png">Ver Trailer</nav>
+    <nav (click)="reproduce($event)" class="play"><img src="./assets/img/play.png">Ver Trailer</nav>
     <div class="slide"></div>
     <ul class="sci">
-      <li id="facebook"><img src="IMG/facebook.png"></li>
-      <li id="twitter"><img src="IMG/twitter.png"></li>
-      <li id="github"><img src="IMG/github.png"></li>
+      <li id="facebook"><img src="./assets/img/facebook.png"></li>
+      <li id="twitter"><img src="./assets/img/twitter.png"></li>
+      <li id="github"><img src="./assets/img/github.png"></li>
     </ul>
   </div>
 </div>
-<div class="trailer">
-  <video src="trailer/StrangerThings1.mp4" controls></video>
-  <img src="IMG/close.png" class="close">
+<div id="trailer" class="trailer">
+  <video id="film" src="./assets/films/StrangerThings1.mp4" controls></video>
+  <img (click)="stopFilm()" id="close" src="./assets/img/close.png" class="close">
 </div>
-<script src="JS/JSTriler.js" type="module"></script>
