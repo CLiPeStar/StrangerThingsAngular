@@ -1,12 +1,17 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {HeaderTempComponent} from './header-temp/header-temp.component';
+import {ComponentesRoutingModule} from './componentes-routing.module';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [HeaderTempComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    ComponentesRoutingModule
+  ],
+  exports: [HeaderTempComponent,
   ]
 })
-export class ComponentesModule { }
+export class ComponentesModule {
+}
