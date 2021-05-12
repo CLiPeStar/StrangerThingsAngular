@@ -15,6 +15,7 @@ export class Temporada1Component implements OnInit {
 
   reproduce(e: any): void {
     //Hola
+    //Hola2
     const d = document;
     const $trailerArea: any = d.getElementById('trailer');
     if (e.target.matches('.play') || e.target.matches(`.play *`)) {
